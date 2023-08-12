@@ -1,0 +1,361 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: content-box;
+  font-family: "Poppins", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.gradient-underline {
+  position: relative;
+  padding-bottom: 0.5rem;
+}
+
+.gradient-underline::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 5rem;
+  height: 5px;
+  background: linear-gradient(to right, #00aaff, #cc00ff);
+}
+
+.header {
+  display: grid;
+  place-items: center;
+  position: sticky;
+  height: 3rem;
+  font-size: 1.5rem;
+  top: 0;
+  transition: top 0.3s ease-in-out;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+  background-color: #fff;
+  z-index: 999999;
+}
+
+.banner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 90vh;
+}
+.banner .desc {
+  width: 40%;
+}
+.banner .desc h1 {
+  margin-right: 3rem;
+  font-size: 3rem;
+  line-height: 120%;
+  margin-bottom: 0.8rem;
+}
+.banner .desc h1 span {
+  background-image: linear-gradient(to bottom right, #00aaff, #cc00ff);
+  -webkit-background-clip: text;
+          background-clip: text;
+  color: transparent;
+}
+.banner .desc p {
+  margin-bottom: 2.5rem;
+  max-width: 40ch;
+}
+.banner .desc a {
+  background-color: #000;
+  color: #fff;
+  padding: 0.8rem 2rem;
+  font-size: 0.8rem;
+  text-decoration: none;
+  border-radius: 0.5rem;
+}
+.banner .video-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  position: relative;
+  width: 40%;
+}
+.banner .video-container img {
+  width: 100%;
+  height: auto;
+}
+.banner .video-container video {
+  position: absolute;
+  height: 17vw;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.about {
+  padding: 4rem 10rem 4rem;
+}
+.about h2 {
+  margin-bottom: 2rem;
+}
+.about .about-container {
+  display: flex;
+}
+.about .about-container img {
+  height: 40vw;
+  box-shadow: 10px 20px 0 2px #00aaff;
+}
+.about .about-container .about-description {
+  width: 68%;
+  margin-left: 4%;
+}
+.about .about-container .about-description .what-i-do {
+  margin-bottom: 1rem;
+}
+.about .about-container .about-description .what-i-do h2 {
+  background-image: linear-gradient(to bottom right, #00aaff, #cc00ff);
+  -webkit-background-clip: text;
+          background-clip: text;
+  color: transparent;
+}
+.about .about-container .about-description .what-i-do > * {
+  margin-bottom: 0.5rem;
+}
+.about .about-container .about-description .my-personality h2 {
+  background-image: linear-gradient(to bottom right, #00aaff, #cc00ff);
+  -webkit-background-clip: text;
+          background-clip: text;
+  color: transparent;
+}
+.about .about-container .about-description .my-personality > * {
+  margin-bottom: 0.5rem;
+}
+
+.skills {
+  padding: 4rem 10rem 4rem;
+}
+.skills h2 {
+  margin-bottom: 2rem;
+}
+.skills .container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.skills .container .card-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 25%;
+  height: auto;
+  padding: 3rem 2rem;
+  margin: 0 1rem;
+  text-align: center;
+  border-radius: 1rem;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+}
+.skills .container .card-container div img {
+  height: 5rem;
+  width: auto;
+}
+.skills .container .card-container div p {
+  margin-top: 1rem;
+  font-size: 1.2rem;
+}
+.skills .container .card-container.first {
+  margin-left: 0;
+}
+.skills .container .card-container.last {
+  margin-right: 0;
+}
+
+.quote {
+  text-align: center;
+  background: linear-gradient(to bottom right, #00aaff, #cc00ff);
+  padding: 1.5rem;
+  font-size: 1.3rem;
+  color: #fff;
+}
+
+.my-workflow {
+  padding: 4rem 10rem 4rem;
+}
+.my-workflow h2 {
+  margin-bottom: 2rem;
+}
+.my-workflow .workflow-container {
+  display: flex;
+  overflow: hidden;
+}
+.my-workflow .workflow-container .buttons {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.my-workflow .workflow-container .buttons .workflow-button {
+  display: block;
+  border-radius: 99rem;
+  border: 1px solid #000;
+  padding: 1rem 1.3rem;
+  margin: 1rem 3rem 1rem 0;
+  background-color: #fff;
+  transition: all 0.3s ease-in-out;
+}
+.my-workflow .workflow-container .buttons .workflow-button:hover {
+  background-color: rgba(0, 0, 0, 0.168627451);
+  cursor: pointer;
+}
+.my-workflow .workflow-container .buttons .workflow-button.active {
+  background-color: #000;
+  color: #fff;
+}
+.my-workflow .workflow-container .buttons .workflow-button.first {
+  padding: 1rem 1.5rem;
+}
+.my-workflow .workflow-container .workflow-content {
+  padding: 2rem;
+  width: 100%;
+  height: 25vw;
+  border: 1px solid #000;
+  border-radius: 1rem;
+}
+.my-workflow .workflow-container .workflow-content h3 {
+  margin-bottom: 1.5rem;
+}
+.my-workflow .workflow-container .workflow-content ul li {
+  margin: 1rem 1rem 1rem 1.5rem;
+}
+
+footer {
+  text-align: center;
+  background-color: #000;
+  color: #fff;
+  padding: 1rem;
+}
+
+.hidden {
+  opacity: 0;
+  transition: all 0.6s ease-out;
+  transform: translateX(-100%);
+  filter: blur(8px);
+}
+
+.show {
+  opacity: 1;
+  transform: translateX(0);
+  filter: blur(0);
+}
+
+.card-container:nth-child(2) {
+  transition-delay: 200ms;
+}
+.card-container:nth-child(3) {
+  transition-delay: 300ms;
+}
+.card-container:nth-child(4) {
+  transition-delay: 400ms;
+}
+
+@media (max-width: 767px) {
+  .header {
+    font-size: 1.2rem;
+  }
+  .banner {
+    display: block;
+    height: auto;
+  }
+  .banner .desc {
+    width: 100%;
+    text-align: center;
+  }
+  .banner .desc h1 {
+    margin: 5rem 2rem 1rem;
+    line-height: 100%;
+    margin-bottom: 0.8rem;
+  }
+  .banner .desc p {
+    margin: 1rem 3.5rem 2rem;
+  }
+  .banner .video-container {
+    width: 90%;
+    height: auto;
+    margin: 0 5% 0;
+    margin-top: 6rem;
+    margin-bottom: 3rem;
+  }
+  .banner .video-container video {
+    height: 40vw;
+  }
+  .about {
+    padding: 2rem;
+  }
+  .about .about-container {
+    display: block;
+  }
+  .about .about-container .img-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2rem;
+  }
+  .about .about-container .img-container img {
+    height: 80vw;
+    box-shadow: none;
+    border-radius: 1rem;
+  }
+  .about .about-container .about-description {
+    width: 100%;
+    margin-left: 0;
+  }
+  .about .about-container .about-description p {
+    font-size: 0.8rem;
+  }
+  .skills {
+    padding: 2rem;
+  }
+  .skills .container {
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .skills .container .card-container {
+    margin: 1rem 0;
+    width: 35%;
+    padding: 1rem 1rem;
+  }
+  .skills .container .card-container div img {
+    height: 10vw;
+  }
+  .quote {
+    font-size: 1rem;
+  }
+  .my-workflow {
+    padding: 1rem;
+  }
+  .my-workflow h2 {
+    margin-top: 3rem;
+  }
+  .my-workflow .workflow-container {
+    display: block;
+  }
+  .my-workflow .workflow-container .buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .my-workflow .workflow-container .buttons .workflow-button {
+    display: inline-block;
+    margin: 1rem 0.5rem;
+  }
+  .my-workflow .workflow-container .workflow-content {
+    height: auto;
+    width: auto;
+  }
+  .my-workflow .workflow-container .workflow-content h3 {
+    font-size: 1rem;
+  }
+  .my-workflow .workflow-container .workflow-content > :not(h3) {
+    font-size: 0.8rem;
+  }
+  footer {
+    font-size: 0.8rem;
+  }
+}/*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Get to know more about Jetter Garcia. A dedicated person who is always eager to consume knowledge mostly in the field of technology. "
+    />
+    <meta name="author" content="Jetter Garcia" />
+    <meta property="og:title" content="Jetter Garcia" />
+    <meta
+      property="og:description"
+      content="Get to know more about Jetter Garcia. A dedicated person who is always eager to consume knowledge mostly in the field of technology."
+    />
+    <meta property="og:image" content="media_assets/lighthouse.png" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Jetter Garcia" />
+    <meta
+      name="twitter:description"
+      content="Get to know more about Jetter Garcia. A dedicated person who is always eager to consume knowledge mostly in the field of technology."
+    />
+    <meta name="twitter:image" content="media_assets/lighthouse.png" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+    <link rel="icon" type="image/png" href="media_assets/lighthouse.png" />
+    <title>Jetter Garcia</title>
+    <meta name="robots" content="index, follow" />
+  </head>
+  <body>
+    <main>
+      <section class="header">Jetter Garcia</section>
+      <section class="banner">
+        <div class="desc">
+          <h1>I bring <span>web ideas</span> into life</h1>
+          <p>
+            Through systematic design and meticulous implementation of best
+            practices.
+          </p>
+          <a href="#about">Learn More</a>
+        </div>
+        <div class="video-container">
+          <img
+            src="media_assets/laptop.png"
+            alt="An image of a laptop used as a background for a montage video being played"
+          />
+          <video
+            src="media_assets/montage.mp4"
+            autoplay
+            muted
+            loop
+            playsinline
+          ></video>
+        </div>
+      </section>
+      <section id="about" class="about">
+        <h2 class="gradient-underline">About Me</h2>
+        <div class="about-container">
+          <div class="img-container">
+            <img src="media_assets/jetter_picture.jpg" alt="Jetter's image" />
+          </div>
+          <div class="about-description">
+            <div class="what-i-do">
+              <h2>What I do</h2>
+              <p>
+                I can proficiently implement a design from Figma or Adobe XD to
+                code, ensuring seamless functionality and responsiveness across
+                various devices with robust accessibility features.
+              </p>
+            </div>
+            <div class="my-personality">
+              <h2>My Personality</h2>
+              <p>
+                As an introvert, I possess a strong ability to think deeply and
+                find comfort in reflecting on my thoughts.
+              </p>
+              <p>
+                I enjoy solving problems, especially those that require creative
+                thinking. I approach such situations with a careful and
+                analytical mindset, making informed decisions that lead to
+                success.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="skills">
+        <h2 class="gradient-underline">Technologies I Use</h2>
+        <div class="container">
+          <div class="card-container hidden first">
+            <div>
+              <img src="media_assets/html.png" alt="HTML logo" />
+              <p>HTML</p>
+            </div>
+          </div>
+          <div class="card-container hidden">
+            <div>
+              <img src="media_assets/css.png" alt="CSS logo" />
+              <p>CSS</p>
+            </div>
+          </div>
+          <div class="card-container hidden">
+            <div>
+              <img src="media_assets/js.png" alt="JavaScript logo" />
+              <p>JS</p>
+            </div>
+          </div>
+          <div class="card-container hidden last">
+            <div>
+              <img src="media_assets/python.png" alt="Python logo" />
+              <p>Python</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="quote">
+        <blockquote>
+          “Productivity lies in ingenuity, not just sheer effort”
+        </blockquote>
+      </section>
+      <section class="my-workflow">
+        <h2 class="gradient-underline">My Workflow</h2>
+        <div class="workflow-container">
+          <div class="buttons">
+            <button
+              id="firstButton"
+              class="workflow-button active first"
+              onclick="showWorkflowStep(1); stopAutoSwitch()"
+            >
+              1
+            </button>
+            <button
+              id="secondButton"
+              class="workflow-button"
+              onclick="showWorkflowStep(2); stopAutoSwitch()"
+            >
+              2
+            </button>
+            <button
+              id="thirdButton"
+              class="workflow-button"
+              onclick="showWorkflowStep(3); stopAutoSwitch()"
+            >
+              3
+            </button>
+            <button
+              id="fourthButton"
+              class="workflow-button"
+              onclick="showWorkflowStep(4); stopAutoSwitch()"
+            >
+              4
+            </button>
+          </div>
+          <div class="workflow-content" data-info="1">
+            <h3>Conceptualization</h3>
+            <p>
+              During the conceptualization phase, I lay the foundation for the
+              project by defining its scope, objectives, and overall direction.
+            </p>
+            <ul>
+              <li>Brainstorm and generate ideas for the web application.</li>
+              <li>
+                Define the purpose, goals, and target audience for the project.
+              </li>
+              <li>
+                Identify key features and functionalities that the web
+                application will offer.
+              </li>
+              <li>
+                Create a rough outline or flowchart to visualize the user
+                journey and interactions.
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      &copy; <span id="currentYear"></span> Jetter Garcia. All rights reserved
+    </footer>
+    <script>
+      const currentYear = new Date().getFullYear();
+      document.querySelector("#currentYear").textContent = currentYear;
+    </script>
+  </body>
+</html>
