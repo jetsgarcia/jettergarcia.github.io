@@ -56,7 +56,7 @@ function showWorkflowStep(step) {
         description:
           "In the implementation phase, this is where I bring the design into life by writing code and developing the actual web application.",
         points: [
-          "Write clean and efficient code using appropriate programming languages (e.g., HTML, CSS, JavaScript).",
+          "Write clean and efficient codes (e.g., HTML, CSS, JavaScript).",
           "Use tools and frameworks that speed up the process of coding.",
           "[Optional] Develop back-end components (server, database) to handle data processing and storage.",
           "[Optional] Integrate third-party APIs if required for specific functionalities.",
